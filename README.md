@@ -42,12 +42,10 @@ The volume physically lives inside Docker Desktop’s VM, but it keeps your data
 Monitoring Resource Usage
 To determine the CPU and memory consumption of the Elastic applications, use the following command:
 
-bash
 
 docker stats
 Example output:
 
-mathematica
 
 CONTAINER ID   NAME          CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
 25d573f9bfca   kibana        2.34%     619.1MiB / 7.654GiB   7.90%     5.43MB / 30.9MB   288MB / 4.1kB    12
