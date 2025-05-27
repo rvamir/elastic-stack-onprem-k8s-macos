@@ -40,13 +40,21 @@ Data inside /usr/share/elasticsearch/data within the container is stored persist
 The volume physically lives inside Docker Desktop’s VM, but it keeps your data safe across container restarts.
 
 Monitoring Resource Usage
-To determine CPU and memory consumption of the Elastic applications, use:
-docker stats
-CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS 
-25d573f9bfca   kibana          2.34%     619.1MiB / 7.654GiB   7.90%     5.43MB / 30.9MB   288MB / 4.1kB    12 
-976ddaec5833   elasticsearch   3.18%     4.428GiB / 7.654GiB   57.86%    25.9MB / 4.94MB   136MB / 26.1MB   200 
-This real-time command displays resource usage for each container.
+To determine the CPU and memory consumption of the Elastic applications, use the following command:
 
+bash
+Copy
+Edit
+docker stats
+Example output:
+
+mathematica
+Copy
+Edit
+CONTAINER ID   NAME          CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+25d573f9bfca   kibana        2.34%     619.1MiB / 7.654GiB   7.90%     5.43MB / 30.9MB   288MB / 4.1kB    12
+976ddaec5833   elasticsearch 3.18%     4.428GiB / 7.654GiB   57.86%    25.9MB / 4.94MB  
+ 
 Alternatively, system tools like:
 macOS Activity Monitor top in Terminal
 
