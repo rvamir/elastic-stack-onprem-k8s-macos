@@ -44,6 +44,7 @@ To determine the CPU and memory consumption of the Elastic applications, use the
 
 
 docker stats
+
 Example output:
 
 
