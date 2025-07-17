@@ -1,4 +1,4 @@
-# Elastic Stack on-prem with Helm on macOS
+# Elastic Stack on-prem on macOS
 
 # Setting up the Elastic Stack on macOS using Docker Compose
 
